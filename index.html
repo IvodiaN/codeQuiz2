@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- link to google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <!-- link to jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Code quiz</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="header">
+                <p id="title">Quiz-Game</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" id="question">
+                <p id="questionText"><button id="play" style="background-color: blue;" onclick="play()">Play</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="row buttonDiv offset-xl-2">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-lg hideDisplay" id="button1"
+                    onclick="check1()"></button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-lg hideDisplay" id="button2"
+                    onclick="check2()"></button>
+            </div>
+        </div>
+
+        <div class="row buttonDiv offset-xl-2">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-lg hideDisplay" id="button3"
+                    onclick="check3()"></button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-lg hideDisplay" id="button4"
+                    onclick="check4()"></button>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-1 bottom-divs">
+                <a>Timer: </a><a class="bigNum hideDisplay" id="timerOutput">:15</a>
+            </div>
+
+            <div class="col-md-1 bottom-divs">
+                <a>Score: </a> <a class="bigNum hideDisplay" id="scoreOutput">0</a>
+            </div>
+        </div>
+    </div>
+     <!-- link to js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
